@@ -4,8 +4,6 @@ def largest_prime_factor(limit)
     while number <= limit do
         if limit % number == 0
             limit /= number
-            puts "number: #{number}"
-            puts "limit: #{limit}"
             prime = isPrime(number) ? number : prime
         end
         number += 1
@@ -26,6 +24,3 @@ def isPrime(n)
     return true
 end
 
-
-puts largest_prime_factor(600851475143)
-puts largest_prime_factor(10)
