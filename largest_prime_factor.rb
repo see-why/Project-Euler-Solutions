@@ -4,7 +4,7 @@ def largest_prime_factor(limit)
     while number <= limit do
         if limit % number == 0
             limit /= number
-            prime = isPrime(number) ? number : prime
+            prime = is_prime(number) ? number : prime
         end
         number += 1
 
@@ -12,7 +12,7 @@ def largest_prime_factor(limit)
     prime
 end
 
-def isPrime(n)
+def is_prime(n)
     if n <= 1
         return false
     end
@@ -23,4 +23,3 @@ def isPrime(n)
     end
     return true
 end
-
