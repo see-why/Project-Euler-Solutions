@@ -1,6 +1,6 @@
 def largest_palindrome_product(n)
-  start = n == 1 ? 1 : 10**(n - 1)
-  last = n == 1 ? 9 : 10**n - 1
+  start = (n == 1) ? 1 : 10**(n - 1)
+  last = (n == 1) ? 9 : 10**n - 1
   max_palindrome = 0
   last.downto(start) do |i|
     break if i * last < max_palindrome

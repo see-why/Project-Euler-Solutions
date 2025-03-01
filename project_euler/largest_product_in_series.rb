@@ -23,7 +23,7 @@ def largest_product_in_series(digits)
   end
 
   # Return both the product and the sequence that produced it
-  return {
+  {
     product: max_product,
     sequence: max_sequence,
     digits: digits

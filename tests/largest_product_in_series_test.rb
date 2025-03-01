@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative '../largest_product_in_series'
+require "minitest/autorun"
+require_relative "../largest_product_in_series"
 
 class LargestProductInSeriesTest < Minitest::Test
   def test_largest_product_in_series_with_4_digits

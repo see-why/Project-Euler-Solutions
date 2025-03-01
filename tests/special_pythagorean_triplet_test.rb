@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative '../project_euler/special_pythagorean_triplet'
+require "minitest/autorun"
+require_relative "../project_euler/special_pythagorean_triplet"
 
 class SpecialPythagoreanTripletTest < Minitest::Test
   def test_special_pythagorean_triplet

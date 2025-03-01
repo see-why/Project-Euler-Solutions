@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative 'largest_palindrome_product'
+require "minitest/autorun"
+require_relative "largest_palindrome_product"
 
 class LargestPalindromeProductTest < Minitest::Test
   def test_single_digit
@@ -14,7 +14,7 @@ class LargestPalindromeProductTest < Minitest::Test
     assert_equal 906609, largest_palindrome_product(3)
   end
 
-  def test_three_digits
+  def test_four_digits
     assert_equal 99000099, largest_palindrome_product(4)
   end
 end

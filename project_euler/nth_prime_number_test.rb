@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative 'nth_prime_number'
+require "minitest/autorun"
+require_relative "nth_prime_number"
 
 class NthPrimeNumberTest < Minitest::Test
   def test_first_prime
@@ -21,5 +21,4 @@ class NthPrimeNumberTest < Minitest::Test
   def test_fifth_prime
     assert_equal 11, nth_prime_number(5)
   end
-
 end

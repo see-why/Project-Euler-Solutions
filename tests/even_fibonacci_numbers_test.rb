@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative '../even_fibonacci_numbers'
+require "minitest/autorun"
+require_relative "../even_fibonacci_numbers"
 
 class EvenFibonacciNumbersTest < Minitest::Test
   def test_even_fibonacci_numbers_with_limit_10

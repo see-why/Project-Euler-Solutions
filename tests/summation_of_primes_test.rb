@@ -1,6 +1,6 @@
-require 'minitest/autorun'
-require_relative '../project_euler/summation_of_primes'
-require_relative '../project_euler/largest_prime_factor'
+require "minitest/autorun"
+require_relative "../project_euler/summation_of_primes"
+require_relative "../project_euler/largest_prime_factor"
 
 class SummationOfPrimesTest < Minitest::Test
   def test_summation_of_primes

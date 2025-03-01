@@ -1,4 +1,4 @@
-require_relative 'largest_prime_factor.rb'
+require_relative "largest_prime_factor"
 
 def nth_prime_number(n)
   if n == 1

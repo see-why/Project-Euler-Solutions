@@ -1,5 +1,5 @@
-require 'minitest/autorun'
-require_relative '../largest_prime_factor'
+require "minitest/autorun"
+require_relative "../largest_prime_factor"
 
 class LargestPrimeNumberTest < Minitest::Test
   def test_largest_prime_factor
