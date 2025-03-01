@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'smallest_multiple'
+require_relative '../smallest_multiple'
 
 class SmallestMultipleTest < Minitest::Test
   def test_smallest_multiple_of_1
