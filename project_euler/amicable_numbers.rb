@@ -1,5 +1,5 @@
 def sum_of_proper_divisors(n)
-  return 1 if n <= 1
+  return 0 if n == 1
 
   sum = 1
   sqrt = Math.sqrt(n).to_i
@@ -7,7 +7,7 @@ def sum_of_proper_divisors(n)
   (2..sqrt).each do |i|
     if n % i == 0
       sum += i
-      sum += n / i if i != sqrt
+      sum += n / i if n != i * i
     end
   end
 
