@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "largest_palindrome_product"
+require_relative "../project_euler/largest_palindrome_product"
 
 class LargestPalindromeProductTest < Minitest::Test
   def test_single_digit

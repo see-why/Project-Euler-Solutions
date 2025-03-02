@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "sum_of_multiples"
+require_relative "../project_euler/sum_of_multiples"
 
 class SumOfMultiplesTest < Minitest::Test
   def test_sum_of_multiples_below_10

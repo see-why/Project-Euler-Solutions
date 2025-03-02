@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "../sum_square_difference"
+require_relative "../project_euler/sum_square_difference"
 
 class SumSquareDifferenceTest < Minitest::Test
   def test_sum_square_difference
