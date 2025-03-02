@@ -1,11 +1,11 @@
-def counting_sundays
+def counting_sundays(start_day_index, start_year, end_year)
   # Days in each month (non-leap year)
   days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-  current_day = 1
+  current_day = start_day_index
   sunday_count = 0
 
-  (1900...2001).each do |year|
+  (start_year..end_year).each do |year|
     (1..12).each do |month|
       if year % 4 == 0 && month == 2
         days_in_month[1] = 29
