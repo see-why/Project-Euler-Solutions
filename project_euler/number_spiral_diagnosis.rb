@@ -1,58 +1,17 @@
 def number_spiral_diagnosis(n)
+  return 1 if n == 1
   return 0 unless n.odd?
 
-  grid = Array.new(n) { Array.new(n, 0) }
-  i = j = center = n / 2
-  grid[center][center] = value = 1
-  right_step = down_step = 1
-  left_step = up_step = last_step = 2
+  sum = 1  # Center value
+  current = 1
 
-  while value < n * n
-    1.upto(right_step) do |ind|
-      value += 1
-      j += 1
-      grid[i][j] = value # move right
+  # For each layer of the spiral
+  (2..n).step(2) do |layer_size|
+    # Calculate the four corners of current layer
+    4.times do
+      current += layer_size
+      sum += current
     end
-
-    1.upto(down_step) do |ind|
-      value += 1
-      i += 1
-      grid[i][j] = value # move down
-    end
-
-    1.upto(left_step) do |ind|
-      value += 1
-      j -= 1
-      grid[i][j] = value # move left
-    end
-
-    1.upto(up_step) do |ind|
-      value += 1
-      i -= 1
-      grid[i][j] = value # move up
-    end
-
-    last_step.times do |ind|
-      value += 1
-      j += 1
-      grid[i][j] = value # move right
-    end
-
-    down_step += 2
-    left_step += 2
-    up_step += 2
-    last_step += 2
-  end
-
-  # pp grid
-
-  sum = 1
-  diagonal_steps = n - center - 1
-  1.upto(diagonal_steps) do |ind|
-    sum += grid[center - ind][center - ind]
-    sum += grid[center + ind][center + ind]
-    sum += grid[center - ind][center + ind]
-    sum += grid[center + ind][center - ind]
   end
 
   sum
