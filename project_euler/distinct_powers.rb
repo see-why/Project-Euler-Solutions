@@ -1,8 +1,8 @@
 def distinct_powers(a, b)
   result = Set.new
-  2.upto(a) do |i|
-    2.upto(b) do |j|
-      result << i**j
+  a.downto(2) do |i|
+    b.downto(2) do |j|
+      result.add(i.pow(j))
     end
   end
   result.size
