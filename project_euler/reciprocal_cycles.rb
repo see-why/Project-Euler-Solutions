@@ -32,5 +32,3 @@ def reciprocal_cycles(limit = 1000)
 
   max_d
 end
-
-puts reciprocal_cycles
