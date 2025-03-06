@@ -108,4 +108,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## GitHub Actions
 
 Status of latest tests:
-![Ruby Tests](https://github.com/see-why/project-euler-ruby/workflows/Ruby%20Tests/badge.svg)
+![Ruby Tests](https://github.com/see-why/project-euler-ruby/workflows/ci.yml/badge.svg)
