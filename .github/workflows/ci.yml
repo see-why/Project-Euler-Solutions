@@ -23,6 +23,9 @@ jobs:
       
       - name: Install dependencies
         run: bundle install
+
+      - name: Install SimpleCov
+        run: gem install simplecov
           
       - name: Run tests
         run: ruby tests/test_helper.rb
