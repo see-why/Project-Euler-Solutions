@@ -22,9 +22,7 @@ jobs:
           bundler-cache: true
       
       - name: Install dependencies
-        run: |
-          gem install minitest
-          gem install rake
+        run: bundle install
           
       - name: Run tests
         run: ruby tests/test_helper.rb
