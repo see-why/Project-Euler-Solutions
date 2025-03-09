@@ -107,5 +107,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## GitHub Actions
 
-Status of latest tests:
 ![Ruby Tests](https://github.com/see-why/test-folder/actions/workflows/ci.yml/badge.svg)
