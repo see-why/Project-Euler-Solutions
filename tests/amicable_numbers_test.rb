@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/amicable_numbers"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/amicable_numbers'
 
 class AmicableNumbersTest < Minitest::Test
   def test_same_result_for_n_and_n_plus_one
@@ -10,8 +12,9 @@ class AmicableNumbersTest < Minitest::Test
   end
 
   def test_sum_of_amicable_numbers_up_to_10000
-    expected_sum = 31626
-    assert_equal expected_sum, amicable_numbers(10000), "Expected sum of amicable numbers up to 10000 to be #{expected_sum}"
+    expected_sum = 31_626
+    assert_equal expected_sum, amicable_numbers(10_000),
+                 "Expected sum of amicable numbers up to 10000 to be #{expected_sum}"
   end
 
   def test_multiple_pairs_of_amicable_numbers

@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/factorial_digit_sum"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/factorial_digit_sum'
 
 class FactorialDigitSumTest < Minitest::Test
   def test_factorial_digit_sum_with_large_number

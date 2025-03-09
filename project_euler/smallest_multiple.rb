@@ -1,12 +1,13 @@
+# frozen_string_literal: true
+
 def gcd(a, b)
-  while b != 0
-    a, b = b, a % b
-  end
+  a, b = b, a % b while b != 0
   a
 end
 
 def lcm(a, b)
-  return 0 if a == 0 || b == 0
+  return 0 if a.zero? || b.zero?
+
   (a * b).abs / gcd(a, b)
 end
 

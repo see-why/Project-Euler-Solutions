@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sum_of_proper_divisors(n)
   return 0 if n == 1
 
@@ -5,7 +7,7 @@ def sum_of_proper_divisors(n)
   sqrt = Math.sqrt(n).to_i
 
   (2..sqrt).each do |i|
-    if n % i == 0
+    if (n % i).zero?
       sum += i
       sum += n / i if n != i * i
     end
@@ -23,9 +25,7 @@ def amicable_numbers(limit)
     next if sum1 >= limit || sum1 <= n
 
     sum2 = sum_of_proper_divisors(sum1)
-    if sum2 == n
-      amicable_sum += n + sum1
-    end
+    amicable_sum += n + sum1 if sum2 == n
   end
 
   amicable_sum

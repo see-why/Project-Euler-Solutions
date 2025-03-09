@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def longest_collatz_sequence(limit)
-  @cache = {1 => 1}
+  @cache = { 1 => 1 }
   longest_chain = 0
   longest_chain_number = 0
 

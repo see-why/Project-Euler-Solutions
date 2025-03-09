@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def pandigal_products
   checked = {}
   sum = 0

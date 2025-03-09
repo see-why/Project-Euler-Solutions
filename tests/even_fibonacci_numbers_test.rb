@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/even_fibonacci_numbers"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/even_fibonacci_numbers'
 
 class EvenFibonacciNumbersTest < Minitest::Test
   def test_even_fibonacci_numbers_with_limit_10
@@ -11,7 +13,7 @@ class EvenFibonacciNumbersTest < Minitest::Test
   end
 
   def test_even_fibonacci_numbers_with_limit_4000000
-    assert_equal 4613732, even_fibonacci_numbers(4_000_000)
+    assert_equal 4_613_732, even_fibonacci_numbers(4_000_000)
   end
 
   def test_even_fibonacci_numbers_with_limit_1

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def highly_divisible_traingular_number(divisors)
   n = 1
   triangle_number = 1
@@ -6,6 +8,7 @@ def highly_divisible_traingular_number(divisors)
   loop do
     divisor_count = divisor_count(triangle_number)
     return triangle_number if divisor_count > divisors
+
     n += 1
     triangle_number += n
   end
@@ -20,7 +23,7 @@ def divisor_count(n)
   count = 2
 
   (2..Math.sqrt(n).to_i).each do |i|
-    if n % i == 0
+    if (n % i).zero?
       count += 2
       count -= 1 if i * i == n
     end

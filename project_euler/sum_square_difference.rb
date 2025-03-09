@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def sum_square_difference(n)
   sum_of_squares = 0
   square_of_sum = 0

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def count_sums(target, coins)
   ways = Array.new(target + 1, 0)
   ways[0] = 1

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def special_pythagorean_triplet(n)
   # For any Pythagorean triplet, a < b < c
   # Also, a < n/3 because a + b + c = n and a < b < c
@@ -19,9 +21,7 @@ def special_pythagorean_triplet(n)
     c = n - a - b
 
     # Verify this is a Pythagorean triplet
-    if (a * a + b * b) == (c * c)
-      return a * b * c
-    end
+    return a * b * c if (a * a + b * b) == (c * c)
   end
 
   nil

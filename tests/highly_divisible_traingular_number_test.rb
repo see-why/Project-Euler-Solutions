@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/highly_divisible_traingular_number"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/highly_divisible_traingular_number'
 
 class HighlyDivisibleTraingularNumberTest < Minitest::Test
   def test_highly_divisible_traingular_number_small_divisors
@@ -12,7 +14,7 @@ def test_highly_divisible_traingular_number_with_one_divisor
 end
 
 def test_highly_divisible_traingular_number_large_divisors
-  assert_equal 76576500, highly_divisible_traingular_number(500)
+  assert_equal 76_576_500, highly_divisible_traingular_number(500)
 end
 
 def test_highly_divisible_traingular_number_prime_divisors

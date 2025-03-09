@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/largest_product_in_grid"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/largest_product_in_grid'
 
 class LargestProductInGridTest < Minitest::Test
   def test_largest_product_horizontally
@@ -69,6 +71,6 @@ class LargestProductInGridTest < Minitest::Test
       [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
     ]
 
-    assert_equal 70600674, largest_product_in_grid(grid)
+    assert_equal 70_600_674, largest_product_in_grid(grid)
   end
 end

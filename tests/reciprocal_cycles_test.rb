@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/reciprocal_cycles"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/reciprocal_cycles'
 
 class ReciprocalCyclesTest < Minitest::Test
   def test_small_numbers

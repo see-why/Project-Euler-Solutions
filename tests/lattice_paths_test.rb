@@ -1,9 +1,11 @@
-require "minitest/autorun"
-require_relative "../project_euler/lattice_paths"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/lattice_paths'
 
 class LatticePathsTest < Minitest::Test
   def test_lattice_paths_with_large_input
-    assert_equal 137846528820, lattice_paths(20)
+    assert_equal 137_846_528_820, lattice_paths(20)
   end
 
   def test_lattice_paths_with_2x2_grid

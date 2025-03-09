@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def digit_fifth_powers
   powers = (0..9).map { |i| i**5 }
   upper_limt = powers.max * 6

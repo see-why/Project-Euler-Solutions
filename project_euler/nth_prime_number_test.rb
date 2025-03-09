@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "nth_prime_number"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative 'nth_prime_number'
 
 class NthPrimeNumberTest < Minitest::Test
   def test_first_prime
@@ -11,11 +13,11 @@ class NthPrimeNumberTest < Minitest::Test
   end
 
   def test_third_prime
-    assert_equal 104729, nth_prime_number(10000)
+    assert_equal 104_729, nth_prime_number(10_000)
   end
 
   def test_fourth_prime
-    assert_equal 104743, nth_prime_number(10001)
+    assert_equal 104_743, nth_prime_number(10_001)
   end
 
   def test_fifth_prime

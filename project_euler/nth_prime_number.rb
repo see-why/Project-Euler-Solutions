@@ -1,9 +1,10 @@
-require_relative "largest_prime_factor"
+# frozen_string_literal: true
+
+require_relative 'largest_prime_factor'
 
 def nth_prime_number(n)
-  if n == 1
-    return 2
-  end
+  return 2 if n == 1
+
   count = 1
 
   3.upto(Float::INFINITY) do |i|

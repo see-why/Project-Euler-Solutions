@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/sum_of_multiples"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/sum_of_multiples'
 
 class SumOfMultiplesTest < Minitest::Test
   def test_sum_of_multiples_below_10
@@ -19,7 +21,7 @@ class SumOfMultiplesTest < Minitest::Test
   end
 
   def test_sum_of_multiples_below_1000
-    assert_equal 233168, sum_of_multiples(1000)
+    assert_equal 233_168, sum_of_multiples(1000)
   end
 
   def test_sum_of_multiples_below_0

@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/smallest_multiple"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/smallest_multiple'
 
 class SmallestMultipleTest < Minitest::Test
   def test_smallest_multiple_of_1
@@ -31,6 +33,6 @@ class SmallestMultipleTest < Minitest::Test
   end
 
   def test_smallest_multiple_of_20
-    assert_equal 232792560, smallest_multiple(20)
+    assert_equal 232_792_560, smallest_multiple(20)
   end
 end

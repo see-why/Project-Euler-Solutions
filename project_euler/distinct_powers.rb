@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def distinct_powers(a, b)
   result = Set.new
   a.downto(2) do |i|

@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/nth_digit_fibonacci_number"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/nth_digit_fibonacci_number'
 
 class NthDigitFibonacciNumberTest < Minitest::Test
   def test_nth_digit_fibonacci_number_for_large_n

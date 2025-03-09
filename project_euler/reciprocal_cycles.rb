@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 def reciprocal_cycles(limit = 1000)
   max_length = 0
   max_d = 0
 
   (2..limit).each do |d|
     # Skip numbers that are multiples of 2 or 5
-    next if d % 2 == 0 || d % 5 == 0
+    next if d.even? || (d % 5).zero?
 
     # Find cycle length using long division
     remainders = {}

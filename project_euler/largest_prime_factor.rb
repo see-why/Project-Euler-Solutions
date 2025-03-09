@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 def largest_prime_factor(limit)
   number = 2
   prime = 2
   while number <= limit
-    if limit % number == 0
+    if (limit % number).zero?
       limit /= number
       prime = is_prime(number) ? number : prime
     end
@@ -13,13 +15,10 @@ def largest_prime_factor(limit)
 end
 
 def is_prime(n)
-  if n <= 1
-    return false
-  end
+  return false if n <= 1
+
   (2..Math.sqrt(n)).each do |i|
-    if n % i == 0
-      return false
-    end
+    return false if (n % i).zero?
   end
   true
 end

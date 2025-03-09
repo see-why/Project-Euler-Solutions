@@ -1,10 +1,12 @@
-require "minitest/autorun"
-require_relative "../project_euler/longest_collatz_sequence"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/longest_collatz_sequence'
 
 class LongestCollatzSequenceTest < Minitest::Test
   def test_handles_large_input_limit
     result = longest_collatz_sequence(1_000_000)
-    assert_equal 837799, result
+    assert_equal 837_799, result
   end
 
   def test_returns_correct_result_for_known_sequence

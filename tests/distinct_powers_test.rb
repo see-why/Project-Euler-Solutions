@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/distinct_powers"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/distinct_powers'
 
 class DistinctPowersTest < Minitest::Test
   def test_distinct_powers_with_larger_values

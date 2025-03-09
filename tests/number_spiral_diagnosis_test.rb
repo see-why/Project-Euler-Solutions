@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/number_spiral_diagnosis"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/number_spiral_diagnosis'
 
 class NumberSpiralDiagnosisTest < Minitest::Test
   def test_number_spiral_diagnosis_with_5x5_grid
@@ -11,6 +13,6 @@ class NumberSpiralDiagnosisTest < Minitest::Test
   end
 
   def test_number_spiral_diagnosis_with_1001X1001_grid
-    assert_equal 669171001, number_spiral_diagnosis(1001)
+    assert_equal 669_171_001, number_spiral_diagnosis(1001)
   end
 end

@@ -1,6 +1,8 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "minitest", "~> 5.14"
-gem "rake"
-gem "rubocop"
-gem "simplecov"
+source 'https://rubygems.org'
+
+gem 'minitest', '~> 5.14'
+gem 'rake'
+gem 'rubocop'
+gem 'simplecov'

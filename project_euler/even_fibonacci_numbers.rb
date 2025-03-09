@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def even_fibonacci_numbers(limit)
   sum = 0
   a = 1

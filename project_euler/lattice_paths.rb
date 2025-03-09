@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def lattice_paths(n)
   # paths from [0,0] to [n,n]
   grid = Array.new(n + 1) { Array.new(n + 1, 0) }

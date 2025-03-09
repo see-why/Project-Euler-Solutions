@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/count_sums"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/count_sums'
 
 class CountSumsTest < Minitest::Test
   def test_count_sums_with_multiple_ways
@@ -11,6 +13,6 @@ class CountSumsTest < Minitest::Test
   def test_count_sums_with_multiple_ways_for_large_target
     target = 200
     coins = [1, 2, 5, 10, 20, 50, 100, 200]
-    assert_equal 73682, count_sums(target, coins)
+    assert_equal 73_682, count_sums(target, coins)
   end
 end

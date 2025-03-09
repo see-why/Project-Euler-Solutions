@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/maximum_path_sum"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/maximum_path_sum'
 
 class MaximumPathSumTest < Minitest::Test
   def test_maximum_path_sum_simple_triangle

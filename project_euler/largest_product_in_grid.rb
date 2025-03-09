@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def largest_product_in_grid(grid)
   max_product = 0
   rows = grid.length
@@ -14,6 +16,7 @@ def largest_product_in_grid(grid)
     (0...cols).each do |j|
       directions.each do |direction|
         next unless valid_position?(i, j, direction, rows, cols)
+
         product = grid[i][j] * direction.reduce(1) do |acc, (di, dj)|
           acc * grid[i + di][j + dj]
         end

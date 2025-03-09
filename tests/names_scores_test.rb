@@ -1,9 +1,11 @@
-require "minitest/autorun"
-require_relative "../project_euler/names_scores"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/names_scores'
 
 class NamesScoresTest < Minitest::Test
   def setup
-    @test_file = "./test_names.txt"
+    @test_file = './test_names.txt'
     @original_file_read = File.method(:read)
   end
 
@@ -29,7 +31,7 @@ class NamesScoresTest < Minitest::Test
   end
 
   def test_names_scores_with_extremely_long_name
-    stub_file_content("\"#{"A" * 1000}\"")
+    stub_file_content("\"#{'A' * 1000}\"")
     assert_equal 1000, names_scores(@test_file)
   end
 end

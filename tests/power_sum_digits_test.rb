@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/power_sum_digits"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/power_sum_digits'
 
 class PowerSumDigitsTest < Minitest::Test
   def test_power_sum_digits_with_large_exponent

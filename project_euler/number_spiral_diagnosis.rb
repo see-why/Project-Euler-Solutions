@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 def number_spiral_diagnosis(n)
   return 1 if n == 1
   return 0 unless n.odd?
 
-  sum = 1  # Center value
+  sum = 1 # Center value
   current = 1
 
   # For each layer of the spiral

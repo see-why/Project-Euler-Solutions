@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/counting_sundays"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/counting_sundays'
 
 class CountingSundaysTest < Minitest::Test
   def test_counting_sundays
