@@ -1,5 +1,7 @@
-require "minitest/autorun"
-require_relative "../project_euler/digits_factorial"
+# frozen_string_literal: true
+
+require 'minitest/autorun'
+require_relative '../project_euler/digits_factorial'
 
 class DigitsFactorialTest < Minitest::Test
   def test_digitd_factorial_returns_expected_result
@@ -9,7 +11,7 @@ class DigitsFactorialTest < Minitest::Test
 
   def test_digitd_factorial_calculates_and_caches_all_digit_factorials
     result = digitd_factorial
-    factorial_cache = {0 => 1, 1 => 1}
+    factorial_cache = { 0 => 1, 1 => 1 }
     upper_bound, factorial_cache = get_upper_bound(factorial_cache)
     _ = get_sum_of_factorials_of_digits(upper_bound, factorial_cache)
 

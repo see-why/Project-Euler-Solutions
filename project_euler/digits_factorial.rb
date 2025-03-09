@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def digitd_factorial
-  factorial_cache = {0 => 1, 1 => 1}
+  factorial_cache = { 0 => 1, 1 => 1 }
   upper_bound, factorial_cache = get_upper_bound(factorial_cache)
   arr = get_sum_of_factorials_of_digits(upper_bound, factorial_cache)
   arr.reduce(:+)
