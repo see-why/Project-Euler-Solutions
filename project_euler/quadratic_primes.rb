@@ -7,7 +7,7 @@ def quadratic_primes(a_limit, b_limit)
   max_coefficients = [0, 0]
   primes_cache = {}
 
-  b_primes = (-b_limit).upto(b_limit).select { |n| is_prime(n) }
+  b_primes = (-b_limit).upto(b_limit).select { |n| prime?(n) }
 
   (-a_limit + 1).upto(a_limit - 1) do |a|
     b_primes.each do |b|
@@ -31,7 +31,7 @@ def count_consecutive_primes(num, prime, primes_cache)
     number = n**2 + (num * n) + prime
     break if number < 2
 
-    is_prime = primes_cache[number] ||= is_prime(number)
+    is_prime = primes_cache[number] ||= prime?(number)
     break unless is_prime
 
     n += 1

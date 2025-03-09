@@ -21,5 +21,5 @@ def chain_length(num)
   return @cache[num] if @cache[num]
 
   next_num = num.even? ? num / 2 : 3 * num + 1
-  @cache[n] = 1 + chain_length(next_num)
+  @cache[num] = 1 + chain_length(next_num)
 end

@@ -6,7 +6,7 @@ def summation_of_primes(num)
   p = 2
 
   while p * p <= num
-    (p * p).step(n, p) { |i| sieve[i] = false } if sieve[p]
+    (p * p).step(num, p) { |i| sieve[i] = false } if sieve[p]
     p += 1
   end
 

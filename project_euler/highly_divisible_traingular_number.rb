@@ -25,7 +25,7 @@ def divisor_count(num)
   (2..Math.sqrt(num).to_i).each do |i|
     if (num % i).zero?
       count += 2
-      count -= 1 if i * i == n
+      count -= 1 if i * i == num
     end
   end
 

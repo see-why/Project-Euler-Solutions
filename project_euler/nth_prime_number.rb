@@ -8,7 +8,7 @@ def nth_prime_number(num)
   count = 1
 
   3.upto(Float::INFINITY) do |i|
-    count += 1 if is_prime(i)
+    count += 1 if prime?(i)
     return i if count == num
   end
 end

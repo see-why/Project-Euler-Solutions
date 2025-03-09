@@ -8,7 +8,7 @@ def number_spiral_diagnosis(num)
   current = 1
 
   # For each layer of the spiral
-  (2..n).step(2) do |layer_size|
+  (2..num).step(2) do |layer_size|
     # Calculate the four corners of current layer
     4.times do
       current += layer_size
