@@ -16,14 +16,14 @@ def highly_divisible_traingular_number(divisors)
   triangle_number
 end
 
-def divisor_count(n)
-  return 1 if n == 1
+def divisor_count(num)
+  return 1 if num == 1
 
   # counting 1 and the number itself
   count = 2
 
-  (2..Math.sqrt(n).to_i).each do |i|
-    if (n % i).zero?
+  (2..Math.sqrt(num).to_i).each do |i|
+    if (num % i).zero?
       count += 2
       count -= 1 if i * i == n
     end

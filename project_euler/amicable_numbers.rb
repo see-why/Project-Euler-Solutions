@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-def sum_of_proper_divisors(n)
-  return 0 if n == 1
+def sum_of_proper_divisors(num)
+  return 0 if num == 1
 
   sum = 1
-  sqrt = Math.sqrt(n).to_i
+  sqrt = Math.sqrt(num).to_i
 
   (2..sqrt).each do |i|
-    if (n % i).zero?
+    if (num % i).zero?
       sum += i
-      sum += n / i if n != i * i
+      sum += num / i if num != i * i
     end
   end
 

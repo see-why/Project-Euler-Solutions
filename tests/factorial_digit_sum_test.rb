@@ -8,7 +8,7 @@ class FactorialDigitSumTest < Minitest::Test
     assert_equal 648, factorial_digit_sum(100)
   end
 
-  def test_factorial_digit_sum_with_10
+  def test_factorial_digit_sum_with_ten
     assert_equal 27, factorial_digit_sum(10)
   end
 

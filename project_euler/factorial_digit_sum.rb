@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-def factorial_digit_sum(n)
-  (1..n).reduce(:*).to_s.chars.map(&:to_i).reduce(:+)
+def factorial_digit_sum(num)
+  (1..num).reduce(:*).to_s.chars.map(&:to_i).reduce(:+)
 end

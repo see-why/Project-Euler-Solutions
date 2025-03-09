@@ -13,17 +13,7 @@ def quadratic_primes(a_limit, b_limit)
     b_primes.each do |b|
       next if b.zero? || a.zero?
 
-      n = 0
-      loop do
-        number = n**2 + (a * n) + b
-        break if number < 2
-
-        is_prime = primes_cache[number] ||= is_prime(number)
-        break unless is_prime
-
-        n += 1
-        max_coefficients
-      end
+      n = count_consecutive_primes(a, b, primes_cache)
 
       if n > max_primes
         max_primes = n
@@ -33,4 +23,18 @@ def quadratic_primes(a_limit, b_limit)
   end
 
   max_coefficients.reduce(:*)
+end
+
+def count_consecutive_primes(num, prime, primes_cache)
+  n = 0
+  loop do
+    number = n**2 + (num * n) + prime
+    break if number < 2
+
+    is_prime = primes_cache[number] ||= is_prime(number)
+    break unless is_prime
+
+    n += 1
+  end
+  n
 end

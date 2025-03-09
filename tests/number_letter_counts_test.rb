@@ -16,7 +16,7 @@ class NumberLetterCountsTest < Minitest::Test
     assert_equal 864, number_letter_counts(100)
   end
 
-  def test_number_letter_counts_for_1000
+  def test_number_letter_counts_for_one_thousand
     assert_equal 21_124, number_letter_counts(1000)
   end
 end

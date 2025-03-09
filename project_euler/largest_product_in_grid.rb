@@ -29,8 +29,8 @@ def largest_product_in_grid(grid)
   max_product
 end
 
-def valid_position?(i, j, direction, rows, cols)
+def valid_position?(row, column, direction, rows, cols)
   direction.all? do |di, dj|
-    (i + di).between?(0, rows - 1) && (j + dj).between?(0, cols - 1)
+    (row + di).between?(0, rows - 1) && (column + dj).between?(0, cols - 1)
   end
 end

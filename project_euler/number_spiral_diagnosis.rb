@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-def number_spiral_diagnosis(n)
-  return 1 if n == 1
-  return 0 unless n.odd?
+def number_spiral_diagnosis(num)
+  return 1 if num == 1
+  return 0 unless num.odd?
 
   sum = 1 # Center value
   current = 1

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-def distinct_powers(a, b)
+def distinct_powers(num, exp)
   result = Set.new
-  a.downto(2) do |i|
-    b.downto(2) do |j|
+  num.downto(2) do |i|
+    exp.downto(2) do |j|
       result.add(i.pow(j))
     end
   end

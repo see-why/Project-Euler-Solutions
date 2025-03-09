@@ -6,7 +6,7 @@ def largest_prime_factor(limit)
   while number <= limit
     if (limit % number).zero?
       limit /= number
-      prime = is_prime(number) ? number : prime
+      prime = prime?(number) ? number : prime
     end
     number += 1
 
@@ -14,11 +14,11 @@ def largest_prime_factor(limit)
   prime
 end
 
-def is_prime(n)
-  return false if n <= 1
+def prime?(num)
+  return false if num <= 1
 
-  (2..Math.sqrt(n)).each do |i|
-    return false if (n % i).zero?
+  (2..Math.sqrt(num)).each do |i|
+    return false if (num % i).zero?
   end
   true
 end

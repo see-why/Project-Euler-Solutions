@@ -17,9 +17,9 @@ def longest_collatz_sequence(limit)
   longest_chain_number
 end
 
-def chain_length(n)
-  return @cache[n] if @cache[n]
+def chain_length(num)
+  return @cache[num] if @cache[num]
 
-  next_num = n.even? ? n / 2 : 3 * n + 1
+  next_num = num.even? ? num / 2 : 3 * num + 1
   @cache[n] = 1 + chain_length(next_num)
 end

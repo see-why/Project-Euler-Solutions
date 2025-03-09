@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-def digit_cancelling_fraction?(i, j)
-  i_digits = i.digits
-  j_digits = j.digits
+def digit_cancelling_fraction?(denominator, numerator)
+  i_digits = denominator.digits
+  j_digits = numerator.digits
   common = (i_digits & j_digits).first
   return false if common.nil?
 
@@ -11,7 +11,7 @@ def digit_cancelling_fraction?(i, j)
   return false if i_digits.empty? || j_digits.empty?
 
   # Use integer multiplication to avoid float comparison
-  i_digits.first * j == i * j_digits.first
+  i_digits.first * numerator == denominator * j_digits.first
 end
 
 def find_digit_cancelling_pairs
