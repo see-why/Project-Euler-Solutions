@@ -38,4 +38,4 @@ jobs:
       - name: Coverage report
         run: |
           gem install simplecov
-          COVERAGE=true ruby -I. tests/**/*_test.rb
+          COVERAGE=true ruby tests/test_helper.rb

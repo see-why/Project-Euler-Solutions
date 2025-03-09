@@ -22,5 +22,3 @@ def non_abundant_numbers
     all_numbers[n] ? 0 : n
   end
 end
-
-puts non_abundant_numbers
