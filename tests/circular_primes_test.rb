@@ -13,6 +13,6 @@ class CircularPrimesTest < Minitest::Test
   end
 
   def test_something_with_upper_bound_one_million
-    assert_equal 100, circular_primes(1_000_000)
+    assert_equal 55, circular_primes(1_000_000)
   end
 end
