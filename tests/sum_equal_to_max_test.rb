@@ -21,4 +21,9 @@ class SumEqualToMaxTest < Minitest::Test
     arr = [3, 5, -1, 8, 24, 3, 5]
     assert_equal true, sum_equal_to_max?(arr)
   end
+
+  def test_sum_equal_to_max_with_more_duplicate_numbers
+    arr = [3, 5, -1, 8, 24, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+    assert_equal true, sum_equal_to_max?(arr)
+  end
 end
