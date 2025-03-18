@@ -15,7 +15,5 @@ def demonstrate_sieve(limit)
     end
   end
 
-  # Show final prime numbers
-  puts "\nFinal prime numbers:"
-  puts sieve.each_with_index.select { |is_prime, _i| is_prime }.map(&:last).join(' ')
+  sieve.each_with_index.select { |is_prime, _i| is_prime }.map(&:last).join(' ')
 end
