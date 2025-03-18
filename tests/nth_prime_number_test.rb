@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require_relative 'nth_prime_number'
+require_relative '../project_euler/nth_prime_number'
 
 class NthPrimeNumberTest < Minitest::Test
   def test_first_prime
