@@ -21,8 +21,9 @@ def truncatable_prime?(num)
   numbers = num.to_s.chars
 
   (0...numbers.size).each do |i|
-    return false unless prime?(numbers[i..-1].join.to_i)
-    return false unless prime?(numbers[0...i].join.to_i) if i > 0
+    return false unless prime?(numbers[i..].join.to_i)
+
+    return false if i.positive? && !prime?(numbers[0...i].join.to_i)
   end
 
   true
