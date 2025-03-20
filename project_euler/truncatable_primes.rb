@@ -2,10 +2,11 @@
 
 require_relative 'largest_prime_factor'
 
-def truncatable_primes(start = 11)
+# first 11 truncatable primes are 23, 37, 53, 73, 313, 317, 373, 797, 3137, 3797, 739397
+def truncatable_primes
   is_prime_map = {}
   count = sum = 0
-  start.upto(Float::INFINITY) do |num|
+  11.upto(Float::INFINITY) do |num|
     break if count == 11
 
     is_prime_map[num] = prime?(num) if is_prime_map[num].nil?
