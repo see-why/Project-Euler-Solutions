@@ -18,5 +18,3 @@ def pandigital(num)
   end
   [digits.sort == ('1'..'9').to_a, digits.join.to_i]
 end
-
-pp pandigal_multiples
