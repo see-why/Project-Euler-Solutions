@@ -17,6 +17,12 @@ class AmicableNumbersTest < Minitest::Test
                  "Expected sum of amicable numbers up to 10000 to be #{expected_sum}"
   end
 
+  def test_sum_of_amicable_numbers_up_to_five_thousand
+    expected_sum = 8442
+    assert_equal expected_sum, amicable_numbers(5_000),
+                 "Expected sum of amicable numbers up to 10000 to be #{expected_sum}"
+  end
+
   def test_multiple_pairs_of_amicable_numbers
     expected_sum = 504
     assert_equal expected_sum, amicable_numbers(300), "Expected sum of amicable numbers up to 300 to be #{expected_sum}"
