@@ -27,15 +27,10 @@ jobs:
       - name: Install SimpleCov
         run: gem install simplecov
           
-      - name: Run tests
+      - name: Run tests and Coverage
         run: ruby tests/test_helper.rb
           
       - name: Run style checks
         run: |
           gem install rubocop
           rubocop
-
-      - name: Coverage report
-        run: |
-          gem install simplecov
-          COVERAGE=true ruby tests/test_helper.rb
