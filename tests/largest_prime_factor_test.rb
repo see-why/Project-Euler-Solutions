@@ -14,11 +14,12 @@ class LargestPrimeNumberTest < Minitest::Test
 
   def test_largest_prime_factor_with_non_prime
     assert_equal 3, largest_prime_factor(9)
+    assert_equal 89, largest_prime_factor(178)
     assert_equal 5, largest_prime_factor(25)
   end
 
   def test_largest_prime_factor_with_large_number
     assert_equal 6857, largest_prime_factor(600_851_475_143)
-    assert_equal 89, largest_prime_factor(178)
+    assert_equal 140_696_161, largest_prime_factor(700_851_475_143_232)
   end
 end
