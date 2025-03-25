@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def something
+def integer_right_triangles
   solutions_map = {}
   abc_map = {}
   upper_bound = Math.sqrt(1_000_000).ceil
