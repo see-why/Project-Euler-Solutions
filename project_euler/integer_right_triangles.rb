@@ -8,7 +8,7 @@ def integer_right_triangles(upper_bound = 1000)
       sum = (b**2) + (c**2)
       a = Math.sqrt(sum)
       next unless (a % 1).zero?
-      next if a + b + c > 1_000
+      next if a + b + c > upper_bound
 
       solutions_map[a + b + c] = 0 if solutions_map[a + b + c].nil?
       solutions_map[a + b + c] += 1
