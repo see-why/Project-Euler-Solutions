@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def integer_right_triangles(upper_bound = 1000)
-  solutions_map = {}
+  perimeter_count = {}
 
   (1..upper_bound / 3).each do |c|
     (c..upper_bound / 2).each do |b|
@@ -10,10 +10,10 @@ def integer_right_triangles(upper_bound = 1000)
       next unless (a % 1).zero?
       next if a + b + c > upper_bound
 
-      solutions_map[a + b + c] = 0 if solutions_map[a + b + c].nil?
-      solutions_map[a + b + c] += 1
+      perimeter_count[a + b + c] = 0 if perimeter_count[a + b + c].nil?
+      perimeter_count[a + b + c] += 1
     end
   end
 
-  solutions_map.key(solutions_map.values.max)
+  perimeter_count.key(perimeter_count.values.max)
 end
