@@ -16,5 +16,3 @@ def champernowne_constant
 
   product
 end
-
-puts champernowne_constant
