@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# frozen_string_literal
-
 require 'minitest/autorun'
 require_relative '../project_euler/large_sum'
 
