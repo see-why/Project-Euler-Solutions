@@ -8,9 +8,8 @@ def largest_pandigital_prime
   prime = 2
 
   loop do
-    permutations = (lower_bound..upper_bound).to_a.permutation(upper_bound).map { |perm| perm.join.to_i }
+    permutations = (lower_bound..upper_bound).to_a.reverse.permutation(upper_bound).map { |perm| perm.join.to_i }
     prime = permutations.select { |perm| prime? perm }.max
-    puts prime
     return prime if prime
 
     upper_bound -= 1
@@ -19,5 +18,3 @@ def largest_pandigital_prime
 
   prime
 end
-
-puts largest_pandigital_prime
