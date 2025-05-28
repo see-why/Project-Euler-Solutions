@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def coded_triangle_numbers(words)
-  array_of_sums = words.map { |word| word.bytes.reduce(&:+) }
+  array_of_sums = words.map { |word| word.bytes.map { |b| b - 'A'.ord + 1 }.reduce(&:+) }
   array_of_sums.select { |sum| coded_triangle_number?(sum) }.count
 end
 
@@ -19,7 +19,7 @@ def coded_triangle_number?(number)
   end
 end
 
-file = File.open('files/words.txt', 'r')
-words = file.read.split(',')
+file = File.read('files/words.txt')
+words = file.gsub('"', '').split(',')
 
 puts coded_triangle_numbers(words)
