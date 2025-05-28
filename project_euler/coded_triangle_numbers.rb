@@ -18,8 +18,3 @@ def coded_triangle_number?(number)
     n += 1
   end
 end
-
-file = File.read('files/words.txt')
-words = file.gsub('"', '').split(',')
-
-puts coded_triangle_numbers(words)
