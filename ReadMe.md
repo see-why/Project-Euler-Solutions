@@ -75,7 +75,7 @@ open coverage/index.html
 | Power Sum Digits | Sum of power digits | ✅ |
 | Quadratic Primes | Find quadratic formula | ✅ |
 | Reciprocal Cycles | Find longest cycle | ✅ |
-| *and more*...
+| *and more*... | Additional solutions | ✅ |
 
 ## Development
 
