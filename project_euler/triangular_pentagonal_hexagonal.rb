@@ -2,28 +2,22 @@
 
 def triangle_pentagon_hexagonal
   triangle_start = 286
-  pentagonal_start = 166
-  hexagonal_start = 144
 
-  triangles = []
-  pentagonals = []
-  hexagonals = []
-  common_number = []
+  loop do
+    next_triangle = n_triangle(triangle_start)
 
-  while common_number.empty?
-    triangles << n_triangle(triangle_start)
-    pentagonals << n_pentagonal(pentagonal_start)
-    hexagonals << n_hexagonal(hexagonal_start)
+    unless pentagonal?(next_triangle)
+      triangle_start += 1
+      next
+    end
 
-    common_number = triangles & pentagonals & hexagonals
-    break unless common_number.empty?
+    unless hexagonal?(next_triangle)
+      triangle_start += 1
+      next
+    end
 
-    triangle_start += 1
-    pentagonal_start += 1
-    hexagonal_start += 1
+    return next_triangle
   end
-
-  common_number.first
 end
 
 def n_triangle(num)
@@ -31,9 +25,11 @@ def n_triangle(num)
 end
 
 def pentagonal?(num)
-  (num * ((3 * num) - 1)) / 2
+  n = (1 + Math.sqrt(1 + 24 * num)) / 6
+  n == n.to_i
 end
 
 def hexagonal?(num)
-  (num * ((2 * num) - 1))
+  n = (1 + Math.sqrt(1 + 8 * num)) / 4
+  n == n.to_i
 end
