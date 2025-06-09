@@ -23,17 +23,17 @@ def triangle_pentagon_hexagonal
     hexagonal_start += 1
   end
 
-  common_number
+  common_number.first
 end
 
 def n_triangle(num)
   (num * (num + 1)) / 2
 end
 
-def n_pentagonal(num)
+def pentagonal?(num)
   (num * ((3 * num) - 1)) / 2
 end
 
-def n_hexagonal(num)
+def hexagonal?(num)
   (num * ((2 * num) - 1))
 end
