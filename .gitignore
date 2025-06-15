@@ -78,3 +78,4 @@ build-iPhoneSimulator/
 *.sublime-workspace
 *.sublime-project
 .vscode/ 
+coder_pad/
