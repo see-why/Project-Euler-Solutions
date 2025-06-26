@@ -9,6 +9,4 @@
 # 646 = 2 * 17 * 19
 # trying to find the first four consecutive numbers to have four distinct
 # prime factors
-def distinct_primes_factors
-
-end
+def distinct_primes_factors; end
