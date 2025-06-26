@@ -3,12 +3,12 @@
 require_relative 'largest_prime_factor'
 
 def circular_primes(upper_bound)
-  circuler_primes_below_hundred = [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97]
-  return circuler_primes_below_hundred.size if upper_bound == 100
+  circular_primes_below_hundred = [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97]
+  return circular_primes_below_hundred.size if upper_bound == 100
 
-  return circuler_primes_below_hundred.select { |i| i < upper_bound }.size if upper_bound < 100
+  return circular_primes_below_hundred.select { |i| i < upper_bound }.size if upper_bound < 100
 
-  100.upto(upper_bound).select { |i| circular_prime?(i) }.size + circuler_primes_below_hundred.size
+  100.upto(upper_bound).select { |i| circular_prime?(i) }.size + circular_primes_below_hundred.size
 end
 
 def circular_prime?(num)
