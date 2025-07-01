@@ -17,8 +17,7 @@ end
 def prime?(num)
   return false if num <= 1
 
-  (2..Math.sqrt(num)).each do |i|
-    return false if (num % i).zero?
+  (2..Math.sqrt(num)).none? do |i|
+    (num % i).zero?
   end
-  true
 end
